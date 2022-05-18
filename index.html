@@ -4,7 +4,41 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
 		<title>Sign Up</title>
 	</head>
-	<body></body>
+	<body>
+		<h1 class="header">Sign Up</h1>
+		<form class="form">
+			<div class="container__splitInput">
+				<input class="input__firstName" placeholder="First Name" />
+				<input class="input__lastName" placeholder="Last Name" />
+			</div>
+
+			<input class="input__phone" placeholder="Mobile No." />
+			<input class="input__email" placeholder="Email Address" />
+
+			<div class="container__splitInput">
+				<input class="input__password" placeholder="Password" />
+				<input class="input__passwordConfirm" placeholder="Confirm Password" />
+			</div>
+
+			<div class="container__splitInputCheck">
+				<div class="checkbox-container">
+					<input type="checkbox" id="checkbox" />
+					<label class="checkbox-label" for="checkbox"> I Agree </label>
+				</div>
+				<div class="terms-text">
+					By clicking <span class="button-text">Register</span>, you agree to
+					the
+					<a class="terms-link" href=""> Terms and Conditions </a>
+					set out by this site, including our Cookie Use
+				</div>
+			</div>
+			<div class="button-container">
+				<button class="btn btn__register">Register</button>
+				<button class="btn btn__signin">Sign In</button>
+			</div>
+		</form>
+	</body>
 </html>
